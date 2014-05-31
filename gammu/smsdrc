@@ -1,0 +1,22 @@
+[gammu]
+# isikan port modem USB di bawah ini
+port = COM7:
+# isikan jenis connection di bawah ini
+connection = at
+
+[smsd]
+port = COM7:
+connection = at
+PIN = 1234
+debuglevel = 0
+commtimeout = 30
+sendtimeout = 30
+service = mysql
+host = localhost
+checksecurity = 0
+user = root
+password = 
+database = sms
+driver = native_mysql
+logfile = smsdlog
+phoneid = huwawei

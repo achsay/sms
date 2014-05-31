@@ -1,0 +1,3 @@
+[gammu]
+port = COM7:
+connection = at

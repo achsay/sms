@@ -1,0 +1,20 @@
+<script language="javascript">
+function dis_able()
+{
+	if(document.myform.D1.value != 'Others')
+		document.myform.otherz.disabled=1;
+	
+	else
+		document.myform.otherz.disabled=0;
+}
+</script>
+<form name="myform">  
+  Category: <select size="1" name="D1" onChange="dis_able()">
+  <option>Category A</option>
+  <option>Category B</option>
+  <option>Catagory C</option>
+  <option value="Others">Others</option>
+  </select><br>
+  Others pls specify: <input disabled type="text" name="otherz" size="20" value="pls specify"></p>
+  <p><input type="submit" value="Submit" name="B1"></p>
+</form>
